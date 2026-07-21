@@ -1,14 +1,15 @@
 import Wrap from "./Wrap";
 import Eyebrow from "./Eyebrow";
+import Reveal from "./Reveal";
 
 export default function About() {
   return (
-    <section id="about" className="border-b border-line py-24">
+    <Reveal as="section" id="about" className="border-b border-line py-24">
       <Wrap>
-        <Eyebrow>Sec. 01 — About</Eyebrow>
+        <Eyebrow>About</Eyebrow>
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-16">
           <div>
-            <p className="m-0 font-display text-[26px] leading-[1.35] font-medium">
+            <p className="m-0 font-display text-[26px] uppercase leading-[1.3] tracking-tight">
               I started with no web development background, and learned by
               building real, deployed projects instead of tutorials.
             </p>
@@ -45,6 +46,6 @@ export default function About() {
           </div>
         </div>
       </Wrap>
-    </section>
+    </Reveal>
   );
 }

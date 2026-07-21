@@ -1,12 +1,13 @@
 import Wrap from "./Wrap";
 import Eyebrow from "./Eyebrow";
+import Reveal from "./Reveal";
 import { SKILLS } from "../data/skills";
 
 export default function Skills() {
   return (
-    <section id="skills" className="border-b border-line py-24">
+    <Reveal as="section" id="skills" className="border-b border-line py-24">
       <Wrap>
-        <Eyebrow>Sec. 02 — Skills</Eyebrow>
+        <Eyebrow>Skills</Eyebrow>
         <div className="grid grid-cols-1 gap-px border border-line bg-line sm:grid-cols-2">
           {SKILLS.map((s) => (
             <div className="bg-bg px-[30px] py-7" key={s.label}>
@@ -27,6 +28,6 @@ export default function Skills() {
           ))}
         </div>
       </Wrap>
-    </section>
+    </Reveal>
   );
 }

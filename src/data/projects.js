@@ -1,5 +1,5 @@
 // Add a new project by adding one object to this array — nothing else needs to change.
-// n: figure number shown in the "FIG." label (e.g. "05")
+// n: small index number shown next to the title (e.g. "05")
 // link/linkLabel: leave link "" and set linkLabel to something like "In development"
 //   to render a non-clickable status instead of a link.
 export const PROJECTS = [
