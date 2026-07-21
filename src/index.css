@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #141414;
-  --color-bg-alt: #1c1c1a;
-  --color-ink: #f5f4f1;
-  --color-ink-soft: #a8a6a0;
+  --color-bg: #faf6f0;
+  --color-bg-alt: #f1e9dd;
+  --color-ink: #2b2320;
+  --color-ink-soft: #6e6156;
   --color-accent: #c1652f;
-  --color-line: rgba(245, 244, 241, 0.12);
-  --color-line-strong: rgba(245, 244, 241, 0.26);
+  --color-accent-2: #6b7a5e;
+  --color-line: rgba(43, 35, 32, 0.1);
+  --color-line-strong: rgba(43, 35, 32, 0.2);
 
-  --font-sans: "Inter", system-ui, sans-serif;
-  --font-display: "Anton", sans-serif;
-  --font-mono: "IBM Plex Mono", monospace;
+  --font-sans: "Montserrat", system-ui, sans-serif;
+  --font-display: "Montserrat", sans-serif;
 }
 
 @layer base {
@@ -52,19 +52,13 @@
 }
 
 @layer components {
-  .mono-label {
-    font-family: var(--font-mono);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-  }
-
-  /* subtle grid background, tuned to read on a near-black page */
+  /* soft warm texture, tinted brown/tan instead of a technical grid */
   .grid-bg {
     position: fixed;
     inset: 0;
     z-index: -1;
-    background-image: linear-gradient(rgba(245, 244, 241, 0.07) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(245, 244, 241, 0.07) 1px, transparent 1px);
+    background-image: linear-gradient(rgba(107, 84, 63, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(107, 84, 63, 0.05) 1px, transparent 1px);
     background-size: 64px 64px;
     mask-image: linear-gradient(to bottom, black, transparent 85%);
     -webkit-mask-image: linear-gradient(to bottom, black, transparent 85%);

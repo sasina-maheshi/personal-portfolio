@@ -23,13 +23,13 @@ export default function Nav() {
       }`}
     >
       <Wrap className="flex h-16 items-center justify-between">
-        <div className="font-display text-lg tracking-wide">{PROFILE.name}</div>
+        <div className="font-display text-lg font-extrabold tracking-tight">{PROFILE.name}</div>
         <ul className="m-0 flex list-none gap-7 p-0">
           {LINKS.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className={`font-mono text-[13px] tracking-[0.05em] no-underline transition-colors duration-150 hover:text-accent ${
+                className={`text-[13px] font-medium tracking-[0.02em] no-underline transition-colors duration-150 hover:text-accent ${
                   active === link.href.slice(1) ? "text-accent" : "text-ink-soft"
                 }`}
               >

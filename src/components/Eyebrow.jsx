@@ -1,3 +1,7 @@
 export default function Eyebrow({ children }) {
-  return <div className="mono-label mb-7 text-[12px] text-accent">{children}</div>;
+  return (
+    <div className="mb-7 font-sans text-xs font-semibold uppercase tracking-[0.22em] text-accent">
+      {children}
+    </div>
+  );
 }
